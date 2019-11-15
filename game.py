@@ -3,13 +3,12 @@ from gameFunctions import winlose
 from gameFunctions import compare
 from gameFunctions import gameVars
 
-
 while gameVars.player is False:
-	print("**********************************")
-	print("Computer lives: ", gameVars.computer_lives, "/" , gameVars.total_lives, "\n")
-	print("Player lives: ", gameVars.player_lives, "/",gameVars.total_lives, "\n")
-	print("Choose your weapon!\n")
-	print("**********************************")
+	print("▁ ▂ ▄ ▅ ▆ ▇ █ █ █ █ █ █ █ █ ▇ ▆ ▅ ▄ ▂ ▁", "\n")
+	print(" ▀▄▀▄▀▄ Computer lives: ", gameVars.computer_lives, "/" , gameVars.total_lives, " ▄▀▄▀▄▀" ,"\n")
+	print(" ▀▄▀▄▀▄ Player lives: ", gameVars.player_lives, "/",gameVars.total_lives, "▄▀▄▀▄▀" ,"\n")
+	print("    Time to choose your weapon!\n")
+	print("░▒▓██████████████████████████████████▓▒░")
 
 	gameVars.player = input("choose rock, paper or scissors: ")
 	gameVars.player = gameVars.player.lower()
